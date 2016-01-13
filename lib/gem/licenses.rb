@@ -29,14 +29,14 @@ module Gem
         end
 
         format = "%40s | %10s | %s"
-        output.puts format % ["License_name", "# of gems", "Gems"]
+        output.puts format % ["License name", "# of gems", "Gems"]
         licenses.map do |license_name, gems|
           { license_name: license_name, gem_count: gems.count, gems: gems.join(", ") }
         end.sort { |a ,b| b[:gem_count] <=> a[:gem_count] }.each do |vars|
           output.puts format % vars.values_at(:license_name, :gem_count, :gems)
         end
 
-        lockfile
+        licenses
       end
 
       private
