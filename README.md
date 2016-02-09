@@ -1,4 +1,4 @@
-# Gem::Licenses
+# Gem::License::Check
 
 This gem is a gem license reporter and checker.  It will make use of the
 `Gemfile` located inside of your projects.
@@ -7,7 +7,7 @@ This gem is a gem license reporter and checker.  It will make use of the
 
 Add this line to your application's Gemfile:
 
-```ruby gem 'gem-licenses' ```
+```ruby gem 'gem-license-check' ```
 
 And then execute:
 
@@ -15,14 +15,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gem-licenses
+    $ gem install gem-license-check
 
 
 ## Usage
 
 Simply run:
 
-    $ gem licenses
+    $ gem license-check
 
     License name |  # of gems | Gems
              MIT |         42 | ...
@@ -32,7 +32,7 @@ Simply run:
 A summary of the licenses in use (and their repartition) will be
 reported.
 
-`gem licenses` supports some options:
+`gem license-check` supports some options:
 
 * `-license <file name>`: License file to use
 
@@ -50,14 +50,14 @@ Then, run `rake test` to run the tests. You can also run `bin/console`
 for an interactive prompt that will allow you to experiment.  To install
 this gem onto your local machine, run `bundle exec rake install`.  To
 release a new version, update the version number in
-`gem-licenses.gemspec`, and then run `bundle exec rake release`, which
+`gem-license-check.gemspec`, and then run `bundle exec rake release`, which
 will create a git tag for the version, push git commits and tags, and
 push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/franckverrot/gem-licenses.  This project is intended
+https://github.com/franckverrot/gem-license-check.  This project is intended
 to be a safe, welcoming space for collaboration, and contributors are
 expected to adhere to the [Contributor
 Covenant](contributor-covenant.org) code of conduct.
